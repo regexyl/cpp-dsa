@@ -2,6 +2,7 @@
 
 * [Untitled](README.md)
 * [C++ Helper Functions](c++-helper-functions.md)
+* [Python Helper Functions](python-helper-functions.md)
 
 ## Log
 
