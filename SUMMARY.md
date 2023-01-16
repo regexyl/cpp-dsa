@@ -9,3 +9,11 @@
 * [Alternative Thinking](log/alternative-thinking.md)
 * [Similar Thinking](log/similar-thinking.md)
 * [Activity Log](log/activity-log.md)
+
+## Patterns
+
+* [DP](patterns/dp.md)
+* [Greedy](patterns/greedy.md)
+* [Tricks](patterns/tricks.md)
+* [Union Find](patterns/union-find.md)
+* [Sorting](patterns/sorting.md)

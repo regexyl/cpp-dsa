@@ -4,6 +4,39 @@ description: My history of Leetcode question attempts.
 
 # Activity Log
 
+* 16 Jan 2023
+  * [Insert Interval](https://leetcode.com/problems/insert-interval)🟠👎
+  * [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths) 🔴
+  * [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) 🟢 (Sliding window)
+  * [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) 🟠 (Sliding window)
+  * [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) 🟠👎
+* 15 Jan 2023
+* 14 Jan 2023
+  * [Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string) 🟠
+* 13 Jan 2023
+  * [Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters) 🔴👎 (DFS, Tree)
+* 12 Jan 2023 - Switching to Python today
+  * [Number of Nodes in the Sub-Tree With the Same Label](https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label) 🟠
+* 11 Jan 2023
+  * [Redundant Connection](https://leetcode.com/problems/redundant-connection) 🟠 (Union Find, DFS - cycle *prevention*, not detection)
+  * [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow) 🟠👎 (BFS, DFS)
+  * [Keys and Rooms](https://leetcode.com/problems/keys-and-rooms) 🟠 (BFS, DFS)
+  * [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree) 🟠 (Union Find, DFS)
+  * [Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree) 🟠👎 (DFS) 🤛🏻
+  * [Course Schedule]() 🟠 (DFS)
+  * [Binary Search](https://leetcode.com/problems/binary-search/) 🟢 (Binary Search)
+  * [Search in a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) 🟠 (Binary Search, there's also a less intuitive but more optimized method for this) 🤛🏻
+  * [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) 🟠
+  * [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas) 🟠 (Binary Search) 🤛🏻
+    - Seemed like a DP problem, but binary search works pretty well for this
+    - Interesting question
+* 10 Jan 2023
+  * [Surrounded Regions](https://leetcode.com/problems/surrounded-regions) 🟠  (DFS, Array)
+    * Two ways to solve it: 1st is to eliminate all invalid regions by turning them from Os to Xs. 2nd is to iterate through each cell on the board, then only flip the region if it is valid.
+* 9 Jan 2023
+  * [Number of Islands](https://leetcode.com/problems/number-of-islands) 🟠 (DFS, Array)
+  * [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii) 🔴👎
+  * [Clone Graph](https://leetcode.com/problems/clone-graph/) 🟠 - MEH try again
 * 8 Jan 2023
   * [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line) 🔴 (Math, Hash Table, Geometry)
   * [Shortest Path to Get All Keys](https://leetcode.com/problems/shortest-path-to-get-all-keys) 🔴👎

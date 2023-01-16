@@ -7,6 +7,10 @@
 #include <algorithm> // min()
 ```
 
+- Find the max element in a vector: `*std::max_element(v.begin(), v.end())`
+    - Remember to dereference it by using `*`
+- Find the min element in a vector: `*std::min_element(v.begin(), v.end())`
+    - Remember to dereference it by using `*`
 - Insert an element at the ith position in a vector
 - Sort a vector backwards: `std::sort(v.rbegin(), v.rend());`
 - Sort a vector with a lambda function
@@ -68,3 +72,34 @@ std::copy_if (foo.begin(), foo.end(), std::back_inserter(bar), [](int i){return 
         - `vector` -> `v.push_back()`, `stack` -> `s.push()`
         - `vector` -> `v.back()`, `stack` -> `s.top()`
         - `vector` -> `v.pop_back()`, `stack` -> `s.pop()`
+    - The methods are similar for `queue`, except that instead of `s.top()`, it has `q.front()` and `q.back()`
+- To insert containers within `unordered_set` or set them as `unordered_map` keys, make sure you declare the set or map with a hash function in a struct:
+```cpp
+struct pairHash {
+    // To understand the following syntax, see:
+    // https://www.reddit.com/r/cpp_questions/comments/250c31/double_parentheses_functionname/
+    // and https://stackoverflow.com/questions/15999123/const-before-parameter-vs-const-after-function-name-c
+    inline std::size_t operator()(const std::pair<int,int>& v) const {
+        // ^ last const in the above line:
+        // The implicit "this" pointer is const-qualified! `const` refers
+        // to this entire function being a const member function - it does
+        // not make modifications on the class (to be verified)
+        return v.first*31+v.second;
+    }
+};
+
+class Solution {
+public:
+    void solve(vector<vector<char>>& board) {
+        for (int i = 1; i < board.size() - 1; ++i) {
+            for (int j = 1; j < board[0].size() - 1; ++j) {
+                if (board[i][j] != 'O') continue;
+                unordered_set<pair<int,int>, pairHash> toFlip; // declare pairHash
+                if (dfs(board, toFlip, i, j)) {
+                    for (auto f : toFlip) board[f.first][f.second] = 'X';
+                }
+            }
+        }
+    }
+};
+```
