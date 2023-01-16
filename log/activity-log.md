@@ -4,12 +4,17 @@ description: My history of Leetcode question attempts.
 
 # Activity Log
 
+🎄 = good
+👎 = try again
+
 * 16 Jan 2023
   * [Insert Interval](https://leetcode.com/problems/insert-interval)🟠👎
   * [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths) 🔴
   * [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) 🟢 (Sliding window)
   * [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) 🟠 (Sliding window)
   * [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement) 🟠👎
+  * [Permutation in String](https://leetcode.com/problems/permutation-in-string) 🟠🎄
+  * [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) 🟠
 * 15 Jan 2023
 * 14 Jan 2023
   * [Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string) 🟠
