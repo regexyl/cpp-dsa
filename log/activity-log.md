@@ -7,6 +7,14 @@ description: My history of Leetcode question attempts.
 🎄 = good
 👎 = try again
 
+* 18 Jan 2023
+  * [Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray)
+* 17 Jan 2023
+  * [Flip String to Monotone Increasing](https://leetcode.com/problems/flip-string-to-monotone-increasing) 🟠👎
+    * !!! Do more of these questions
+  * [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) 🟠
+  * [Valid Sudoku](https://leetcode.com/problems/valid-sudoku) 🟠
+  * [Daily Temperatures](https://leetcode.com/problems/daily-temperatures) 🟠👎
 * 16 Jan 2023
   * [Insert Interval](https://leetcode.com/problems/insert-interval)🟠👎
   * [Number of Good Paths](https://leetcode.com/problems/number-of-good-paths) 🔴
