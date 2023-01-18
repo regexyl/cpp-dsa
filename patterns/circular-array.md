@@ -12,7 +12,7 @@ If an array is said to be wrapped around (i.e. circular) and that you need to fi
 2. Wrap around
    1. For this case, invert that thought process and find the opposite of the contiguous wrap-around subarray. What's left in the array is the part you're not finding - so take that and subtract it from the total of the array.
 
-<img src="../.gitbook/assets/circular-array.png" alt="" data-size="original">
+<figure><img src="../.gitbook/assets/circular-array.png" alt=""><figcaption></figcaption></figure>
 
 **Questions**
 
