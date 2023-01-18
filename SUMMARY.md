@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Untitled](README.md)
+* [Introduction](README.md)
 * [C++ Helper Functions](c++-helper-functions.md)
 * [Python Helper Functions](python-helper-functions.md)
 
@@ -17,3 +17,5 @@
 * [Tricks](patterns/tricks.md)
 * [Union Find](patterns/union-find.md)
 * [Sorting](patterns/sorting.md)
+* [Binary Search](patterns/binary-search.md)
+* [Circular Array](patterns/circular-array.md)
