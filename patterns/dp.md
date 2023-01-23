@@ -12,4 +12,10 @@ description: Identify the type of DP question you see.
 
 ### Decode Ways
 
+{% hint style="info" %}
+recursion
+{% endhint %}
+
+Using a recursive function (let's call it _**r**_), imagine trying to maximize the number of times _**r**_ is called as long as it's valid. This enables all pathways of these calls to hit the base case of `return 1`, so they eventually all add up to the total number of ways this number pattern can be decoded.
+
 <figure><img src="../.gitbook/assets/decode-ways-dp.png" alt=""><figcaption></figcaption></figure>
