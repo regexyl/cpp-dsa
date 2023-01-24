@@ -1,6 +1,6 @@
 # Bit Manipulation
 
-####
+### Check pattern in bit combinations
 
 #### [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)
 
