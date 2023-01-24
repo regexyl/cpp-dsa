@@ -14,7 +14,11 @@ description: Identify the type of DP question you see.
 
 #### 0/1 Knapsack
 
+Recursion -> Memoized (Top-Down) / Bottom-Up
 
+<figure><img src="../.gitbook/assets/01-knapsack.png" alt=""><figcaption></figcaption></figure>
+
+#### Unbounded Knapsack
 
 ### Problems
 
