@@ -1,5 +1,9 @@
 # Dynamic Programming
 
+### Todo
+
+* [ ] [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)
+
 ### Methodology for Solving DPs
 
 #### 1. Identify the category
@@ -157,6 +161,28 @@ Using a recursive function (let's call it _**r**_), imagine trying to maximize t
 (Imagine scattering out all your Pokeballs in the hopes of each Pokeball thrown out captures 1 Pokemon each.)&#x20;
 
 <figure><img src="../.gitbook/assets/decode-ways-dp.png" alt=""><figcaption></figcaption></figure>
+
+```python
+from functools import lru_cache
+
+class Solution:
+    def numDecodings(self, s: str) -> int:
+        n = len(s)
+
+        @lru_cache(None)
+        def dp(i: int) -> int:
+            if i == n: return 1
+            
+            num = 0
+            if s[i] != "0":
+                num += dp(i + 1)
+            if i + 1 < n and 10 <= int(s[i:i + 2]) <= 26:
+                num += dp(i + 2)
+
+            return num
+
+        return dp(0)
+```
 
 ### References
 
