@@ -89,7 +89,60 @@ Given an array of items which each have a _weight (w)_ and _value (v)_ assigned,
 
 <figure><img src="../.gitbook/assets/01-knapsack.png" alt=""><figcaption></figcaption></figure>
 
+Examples
+
+* Equal Subset Sum Partition
+* Subset Sum
+* Minimum Subset Sum Difference
+* Count of Subset Sum
+* Target Sum
+
 #### Unbounded Knapsack
+
+Examples
+
+* Rod Cutting
+* Coin Change
+* Minimum Coin Change
+* Maximum Ribbon Cut
+
+#### Fibonacci Numbers
+
+Examples
+
+* Staircase
+* Number factors
+* Minimum jumps to reach the end
+* Minimum jumps with fee
+* House thief
+
+#### Palindromic Sequence
+
+Examples
+
+* Longest Palindromic Subsequence
+* Longest Palindromic Substring
+* Count of Palindromic Substrings
+* Minimum Deletions in a String to make it a Palindrome
+* Palindromic Partitioning
+
+#### Longest Common Substring
+
+Examples
+
+* Longest Common Substring
+* Longest Common Subsequence
+* Minimum Deletions and Insertions to Transform a String into Another
+* Longest Increasing Subsequence
+* Maximum Sum Increasing Subsequence
+* Shortest Common Super-Sequence
+* Minimum Deletions to Make a Sequence Sorted
+* Longest Repeating Subsequence
+* Subsequence Pattern Matching
+* Longest Bitonic Subsequence
+* Longest Alternating Subsequence
+* Edit Distance
+* Strings Interleaving
 
 ### Problems
 
