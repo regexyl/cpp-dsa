@@ -7,8 +7,8 @@
 1. [0/1 Knapsack](dp.md#1.-0-1-knapsack)
 2. [Unbounded Knapsack](dp.md#unbounded-knapsack)
 3. Shortest Path (eg: Unique Paths I/II) - or is it Palindromic Sequence as seen on educative.io?
-4. Fibonacci Sequence (eg: House Thief, Jump Game)
-5. Longest Common Substring/Subsequeunce
+4. [Fibonacci Numbers](dp.md#fibonacci-numbers) (eg: House Thief, Jump Game)
+5. [Longest Common Substring](dp.md#longest-common-substring)
 
 #### 2. States
 
@@ -157,6 +157,28 @@ Using a recursive function (let's call it _**r**_), imagine trying to maximize t
 (Imagine scattering out all your Pokeballs in the hopes of each Pokeball thrown out captures 1 Pokemon each.)&#x20;
 
 <figure><img src="../.gitbook/assets/decode-ways-dp.png" alt=""><figcaption></figcaption></figure>
+
+```python
+from functools import lru_cache
+
+class Solution:
+    def numDecodings(self, s: str) -> int:
+        n = len(s)
+
+        @lru_cache(None)
+        def dp(i: int) -> int:
+            if i == n: return 1
+            
+            num = 0
+            if s[i] != "0":
+                num += dp(i + 1)
+            if i + 1 < n and 10 <= int(s[i:i + 2]) <= 26:
+                num += dp(i + 2)
+
+            return num
+
+        return dp(0)
+```
 
 ### References
 
