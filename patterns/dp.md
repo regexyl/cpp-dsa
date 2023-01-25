@@ -158,28 +158,6 @@ Using a recursive function (let's call it _**r**_), imagine trying to maximize t
 
 <figure><img src="../.gitbook/assets/decode-ways-dp.png" alt=""><figcaption></figcaption></figure>
 
-```python
-from functools import lru_cache
-
-class Solution:
-    def numDecodings(self, s: str) -> int:
-        n = len(s)
-
-        @lru_cache(None)
-        def dp(i: int) -> int:
-            if i == n: return 1
-            
-            num = 0
-            if s[i] != "0":
-                num += dp(i + 1)
-            if i + 1 < n and 10 <= int(s[i:i + 2]) <= 26:
-                num += dp(i + 2)
-
-            return num
-
-        return dp(0)
-```
-
 ### References
 
 * [educative.io - Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
