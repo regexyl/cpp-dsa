@@ -12,7 +12,7 @@
 
 ## Patterns
 
-* [DP](patterns/dp.md)
+* [Dynamic Programming](patterns/dp.md)
 * [Greedy](patterns/greedy.md)
 * [Tricks](patterns/tricks.md)
 * [Union Find](patterns/union-find.md)
