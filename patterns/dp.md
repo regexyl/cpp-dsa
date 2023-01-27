@@ -121,7 +121,7 @@ Examples
 * Minimum jumps to reach the end
 * Minimum jumps with fee
 * House thief
-* [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) (can falls under the [Longest Common Substring](dp.md#longest-common-substring) category)
+* [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) (also falls under the [Longest Common Substring](dp.md#longest-common-substring) category)
 
 #### Palindromic Sequence
 
