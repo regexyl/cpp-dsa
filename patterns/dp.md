@@ -106,9 +106,11 @@ Examples
 Examples
 
 * Rod Cutting
-* Coin Change
+* [Coin Change](https://leetcode.com/problems/coin-change/)
+* [Coin Change II](https://leetcode.com/problems/coin-change-ii/)
 * Minimum Coin Change
 * Maximum Ribbon Cut
+* [Minimum Cost for Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/)
 
 #### Fibonacci Numbers
 
@@ -145,7 +147,8 @@ Examples
 * Subsequence Pattern Matching
 * Longest Bitonic Subsequence
 * Longest Alternating Subsequence
-* Edit Distance
+* [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
+* [Edit Distance](https://leetcode.com/problems/edit-distance/)
 * Strings Interleaving
 
 ### Problems
