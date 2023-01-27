@@ -13,6 +13,9 @@
 ## Patterns
 
 * [Dynamic Programming](patterns/dp.md)
+* [DFS/BFS](patterns/dfs-bfs.md)
+* [Backtracking](patterns/backtracking.md)
+* [State Machine](patterns/state-machine.md)
 * [Greedy](patterns/greedy.md)
 * [Tricks](patterns/tricks.md)
 * [Union Find](patterns/union-find.md)
