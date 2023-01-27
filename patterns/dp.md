@@ -3,6 +3,7 @@
 ### Todo
 
 * [ ] [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)
+* [ ] [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)
 
 ### Methodology for Solving DPs
 
