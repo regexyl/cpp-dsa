@@ -157,7 +157,7 @@ Examples
 #### Decode Ways
 
 {% hint style="info" %}
-recursion
+recursion, 0/1 knapsack
 {% endhint %}
 
 Using a recursive function (let's call it _**r**_), imagine trying to maximize the number of times _**r**_ is called as long as it's valid. This enables all pathways of these calls to hit the base case of `return 1`, so they eventually all add up to the total number of ways this number pattern can be decoded.
@@ -186,6 +186,28 @@ class Solution:
             return num
 
         return dp(0)
+```
+
+#### Longest Common Subsequence
+
+{% hint style="info" %}
+Bottom-up 2D, "Longest Common Substring" pattern
+{% endhint %}
+
+```python
+def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+    # Bottom-up 2D dp
+    n1, n2 = len(text1), len(text2)
+    dp = [[0] * (n2 + 1) for _ in range(n1 + 1)]
+
+    for i in range(n1 - 1, -1, -1):
+        for j in range(n2 - 1, -1, -1):
+            if text1[i] == text2[j]:
+                dp[i][j] += 1 + dp[i + 1][j + 1] # only take diagonal val
+            else:
+                dp[i][j] = max(dp[i + 1][j], dp[i][j + 1]) # take bottom and right vals
+
+    return dp[0][0]
 ```
 
 ### References
