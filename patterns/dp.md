@@ -121,12 +121,13 @@ Examples
 * Minimum jumps to reach the end
 * Minimum jumps with fee
 * House thief
+* [Maximum Alternating Subsequence Sum](https://leetcode.com/problems/maximum-alternating-subsequence-sum/) (can falls under the [Longest Common Substring](dp.md#longest-common-substring) category)
 
 #### Palindromic Sequence
 
 Examples
 
-* Longest Palindromic Subsequence
+* Longest Palindromic Subsequence (also falls in the [Longest Common Substring](dp.md#longest-common-substring) category)
 * Longest Palindromic Substring
 * Count of Palindromic Substrings
 * Minimum Deletions in a String to make it a Palindrome
