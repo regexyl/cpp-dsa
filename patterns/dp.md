@@ -105,6 +105,10 @@ Examples
 
 #### Unbounded Knapsack
 
+Same as 0/1 knapsack, except that you can put any number of weights into the knapsack (i.e. not just restricted to one).
+
+<figure><img src="../.gitbook/assets/unbounded-knapsack.png" alt=""><figcaption></figcaption></figure>
+
 Examples
 
 * Rod Cutting
