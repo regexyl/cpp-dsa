@@ -4,6 +4,7 @@
 
 * [ ] [Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick)
 * [ ] [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings)
+* [ ] Bottom-up for [Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets)
 
 ### Methodology for Solving DPs
 
