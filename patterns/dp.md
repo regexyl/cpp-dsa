@@ -97,7 +97,7 @@ Given an array of items which each have a _weight (w)_ and _value (v)_ assigned,
 
 Examples
 
-* Equal Subset Sum Partition
+* [Equal Subset Sum Partition](https://leetcode.com/problems/partition-equal-subset-sum/)
 * Subset Sum
 * Minimum Subset Sum Difference
 * Count of Subset Sum
@@ -215,6 +215,41 @@ def longestCommonSubsequence(self, text1: str, text2: str) -> int:
 
     return dp[0][0]
 ```
+
+#### Partition Equal Subset Sum
+
+{% hint style="info" %}
+0/1 Knapsack, Bitmask
+{% endhint %}
+
+This problem can be solved with the regular 0/1 knapsack top-down DP solution w/memoization:
+
+```python
+def canPartition(self, nums: List[int]) -> bool:
+    n = len(nums)
+
+    total = sum(nums)
+    if total % 2 != 0: return False # decimal
+
+    half = total // 2
+    memo = [[None] * (half + 1) for _ in range(n)]
+
+    def dp(i, val):
+        if val == 0: return True
+        if i == n or val < 0: return False
+
+        if memo[i][val] != None: return memo[i][val]
+        
+        result = dp(i + 1, val) or dp(i + 1, val - nums[i])
+        memo[i][val] = result
+        return result
+    
+    return dp(0, half)
+```
+
+But there's a more efficient way of solving it via bitmask:
+
+{% embed url="https://docs.google.com/document/d/15fgvC4-rNp2AVDM1b_6kfEDieF9v4a18dE9h_SoIHyg/edit?usp=sharing" %}
 
 ### References
 
