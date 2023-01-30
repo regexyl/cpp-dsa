@@ -160,7 +160,7 @@ Examples
 
 ### Problems
 
-#### Decode Ways
+#### [Decode Ways](https://leetcode.com/problems/decode-ways/)
 
 {% hint style="info" %}
 recursion, 0/1 knapsack
@@ -194,7 +194,7 @@ class Solution:
         return dp(0)
 ```
 
-#### Longest Common Subsequence
+#### [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 
 {% hint style="info" %}
 Bottom-up 2D, "Longest Common Substring" pattern
@@ -216,7 +216,7 @@ def longestCommonSubsequence(self, text1: str, text2: str) -> int:
     return dp[0][0]
 ```
 
-#### Partition Equal Subset Sum
+#### [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
 
 {% hint style="info" %}
 0/1 Knapsack, Bitmask
