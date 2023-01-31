@@ -269,6 +269,17 @@ But there's a more efficient way of solving it via bitmask:
 
 {% embed url="https://docs.google.com/document/d/15fgvC4-rNp2AVDM1b_6kfEDieF9v4a18dE9h_SoIHyg/edit?usp=sharing" %}
 
+#### [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)
+
+{% hint style="info" %}
+LCS pattern, a separate problem on its own
+{% endhint %}
+
+You can either do it either way:
+
+1. Binary search
+2. Patience sorting + tails invariant
+
 ### References
 
 * [educative.io - Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
