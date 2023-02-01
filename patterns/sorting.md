@@ -21,7 +21,7 @@ void sort (int a[], int n) {
     for (current = 0; current < n-1; current++) {
         lowestindex = current;
         for (j = current+1; j < n; j++) {
-            if (a[j] < a[current]) {
+            if (a[j] < a[lowestindex]) {
                 lowestindex = j;
             }
         }
