@@ -12,7 +12,7 @@ description: >-
 
 Find the number of beams in total, with the condition that beams can only pass through rows which do not have an existing beam inside.
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (2).png>)
 
 ```
 Input: bank = ["011001","000000","010100","001000"]

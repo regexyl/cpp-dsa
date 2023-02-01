@@ -4,11 +4,13 @@ Different sorting methods in C++: https://leetcode.com/problems/sort-an-array/so
 
 ## Types of Sorting
 
-1. Selection sort
-2. Quicksort
-3. Patience sort
+1. [Selection sort](sorting.md#selection-sort) - take min. value to the right
+2. [Quicksort](sorting.md#quicksort) - pivot sorting
+3. [Patience sort](sorting.md#patience-sort) - pile of cards
 
 ### Selection Sort
+
+Time: O(n^2) - best, average, worst, Space: O(1)
 
 When iterating through each element in the array at position `i`, look to the right of `i` till the end of the array to find the minimum (let's call this `j`), then swap both elements if `i` is greater than that `j`.
 
@@ -33,6 +35,12 @@ void sort (int a[], int n) {
     }
 }
 ```
+
+### Quicksort
+
+Time: O(nlog(n)) - best, average, O(n^2) - worst, Space: O(log(n))
+
+![](<../.gitbook/assets/image (1).png>)
 
 ### Patience Sort
 
