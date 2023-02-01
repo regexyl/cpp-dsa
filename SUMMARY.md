@@ -23,3 +23,7 @@
 * [Binary Search](patterns/binary-search.md)
 * [Circular Array](patterns/circular-array.md)
 * [Bit Manipulation](patterns/bit-manipulation.md)
+
+## Math
+
+* [GCD](math/gcd.md)
