@@ -10,6 +10,10 @@ Different sorting methods in C++: https://leetcode.com/problems/sort-an-array/so
 
 ### Selection Sort
 
+When iterating through each element in the array at position `i`, look to the right of `i` till the end of the array to find the minimum (let's call this `j`), then swap both elements if `i` is greater than that `j`.
+
+![](../.gitbook/assets/image.png)
+
 ```c
 // a: array, n: size of array (as C is unable to determine its size)
 void sort (int a[], int n) {

@@ -284,7 +284,7 @@ You can either do it either way:
 
 Refer to this [Princeton - Longest Increasing Subsequence lecture](https://www.cs.princeton.edu/courses/archive/spring13/cos423/lectures/LongestIncreasingSubsequence.pdf).
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Think of patience sort as maintaining a pile of cards, and only adding another pile if the current value in the deck is greater than the last min. value in the <code>minFromEachPile</code> array (or if the array is empty).</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Think of patience sort as maintaining a pile of cards, and only adding another pile if the current value in the deck is greater than the last min. value in the <code>minFromEachPile</code> array (or if the array is empty).</p></figcaption></figure>
 
 * `minFromEachPile` only tracks the minimum value from each pile.
   * Based on the diagram above, it is `[1, 3, 4, 5]`.
