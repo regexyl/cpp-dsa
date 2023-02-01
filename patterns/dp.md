@@ -146,7 +146,7 @@ Examples
 * Longest Common Substring
 * Longest Common Subsequence
 * Minimum Deletions and Insertions to Transform a String into Another
-* Longest Increasing Subsequence
+* Longest Increasing Subsequence ([solution](dp.md#longest-increasing-subsequence))
 * Maximum Sum Increasing Subsequence
 * Shortest Common Super-Sequence
 * Minimum Deletions to Make a Sequence Sorted
@@ -278,7 +278,35 @@ LCS pattern, a separate problem on its own
 You can either do it either way:
 
 1. Binary search
-2. Patience sorting + tails invariant
+2. Patience sort
+
+**Patience Sort**
+
+Refer to this [Princeton - Longest Increasing Subsequence lecture](https://www.cs.princeton.edu/courses/archive/spring13/cos423/lectures/LongestIncreasingSubsequence.pdf).
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Think of patience sort as maintaining a pile of cards, and only adding another pile if the current value in the deck is greater than the last min. value in the <code>minFromEachPile</code> array (or if the array is empty).</p></figcaption></figure>
+
+* `minFromEachPile` only tracks the minimum value from each pile.
+  * Based on the diagram above, it is `[1, 3, 4, 5]`.
+* `bisect_left(arr, val)` searches for the leftmost index in which the insertion of `val` would maintain the list in a sorted order from left to right.
+
+```python
+from bisect import bisect_left
+
+def lengthOfLIS(self, nums: List[int]) -> int:
+    minFromEachPile = []
+
+    for n in nums:
+        if len(minFromEachPile) == 0 or minFromEachPile[-1] < n:
+            minFromEachPile.append(n) # start new pile
+        else:
+            i = bisect_left(minFromEachPile, n)
+            minFromEachPile[i] = n # replace min value of pile at i 
+    
+    return len(minFromEachPile)
+```
+
+A similar problem is [Best Team with No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/).
 
 ### References
 
