@@ -332,6 +332,8 @@ def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
 The following improves the above code by about 200x in speed:
 
 ```python
+from bisect import bisect_right
+
 def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
     n = len(scores)
     m = max(ages) + 1
@@ -340,8 +342,7 @@ def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
     
     for s, age in scoreAge:
         currScore = dp[age] + s
-        if dp[age] >= currScore: continue
-        up = bisect.bisect_right(dp, currScore)
+        up = bisect_right(dp, currScore)
         dp[age:up] = [currScore] * (up - age)
         
     return dp[m-1]
