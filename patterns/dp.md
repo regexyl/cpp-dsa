@@ -308,6 +308,27 @@ def lengthOfLIS(self, nums: List[int]) -> int:
 
 A similar problem is [Best Team with No Conflicts](https://leetcode.com/problems/best-team-with-no-conflicts/).
 
+The method below does not use patience sort though, it's just DP:
+
+```python
+def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
+    n = len(scores)
+    ageScore = list(zip(ages, scores))
+    ageScore.sort()
+
+    dp = [0] * n
+    bestScore = 0
+
+    for i in range(n):
+        dp[i] = ageScore[i][1]
+        for j in range(i):
+            if ageScore[i][1] >= ageScore[j][1]:
+                dp[i] = max(dp[i], dp[j] + ageScore[i][1])
+        bestScore = max(bestScore, dp[i])
+    
+    return bestScore
+```
+
 ### References
 
 * [educative.io - Grokking Dynamic Programming Patterns for Coding Interviews](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews)
