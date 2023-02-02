@@ -1,8 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [C++ Helper Functions](c++-helper-functions.md)
-* [Python Helper Functions](python-helper-functions.md)
 
 ## Log
 
@@ -27,3 +25,11 @@
 ## Math
 
 * [GCD](math/gcd.md)
+
+## Language Intricacies
+
+* [Python](language-intricacies/python/README.md)
+  * [Python Helper Functions](language-intricacies/python/python-helper-functions.md)
+  * [Pass-by-ref vs Pass-by-val](language-intricacies/python/pass-by-ref-vs-pass-by-val.md)
+* [C++](language-intricacies/c++/README.md)
+  * [C++ Helper Functions](language-intricacies/c++/c++-helper-functions.md)
