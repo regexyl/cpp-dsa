@@ -329,7 +329,7 @@ def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
     return bestScore
 ```
 
-The following improves the above code by about 200x in speed:
+The following improves the above code by about _200x_ in speed:
 
 ```python
 from bisect import bisect_right
@@ -349,6 +349,32 @@ def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
         dp[age:up] = [currScore] * (up - age)
         
     return dp[m-1]
+```
+
+Here's the state of the `dp` list when stepping through each `for` loop:
+
+```
+ages = [1,2,3,4,5]
+scores = [1,3,5,10,15]
+scoreAge = [(1, 1), (3, 2), (5, 3), (10, 4), (15, 5)]
+-> choose all players
+
+1st: [0,1,1,1,1,1] (state of dp)
+2nd: [0,1,4,4,4,4]
+3rd: [0,1,4,9,9,9]
+4th: [0,1,4,9,19,19]
+5th: [0,1,4,9,19,34]
+
+ages = [2,1,2,1]
+scores = [4,5,6,5]
+scoreAge = [(4, 2), (5, 1), (5, 1), (6, 2)]
+-> choose the last 3 players
+
+1st: [0,0,4]
+2nd: [0,5,5]
+3rd: [0,10,10]
+4th = [0,10,16]
+
 ```
 
 ### References
