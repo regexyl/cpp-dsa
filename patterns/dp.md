@@ -337,7 +337,10 @@ from bisect import bisect_right
 def bestTeamScore(self, scores: List[int], ages: List[int]) -> int:
     n = len(scores)
     m = max(ages) + 1
+    
+    # Sort by score instead of age
     scoreAge = sorted([(x,y) for x,y in zip(scores,ages)])
+    # dp has size of max(ages) + 1, not n
     dp = [0] * m
     
     for s, age in scoreAge:
