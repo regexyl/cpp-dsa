@@ -371,7 +371,7 @@ scoreAge = [(4, 2), (5, 1), (5, 1), (6, 2)]
 -> choose the last 3 players
 
 1st: [0,0,4]
-2nd: [0,5,5]
+2nd: [0,5,5] -> 5 overrides 4 in index 2
 3rd: [0,10,10]
 4th = [0,10,16]
 
